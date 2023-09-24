@@ -9,8 +9,7 @@
     position: fixed;
     transition: 1s;
     z-index: 10;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 0 50px 0 50px;
 }
 
 .navbar .name {
@@ -18,7 +17,6 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    text-transform: uppercase;
 }
 
 .header {
@@ -97,16 +95,16 @@
     .navbar{
         position: fixed;
         z-index: 3;
-        padding: 0px;
+        padding: 0;
     }
-    .navbar-links li .fivem{
-        display: none;
+    .name a {
+        padding-left: 5px;
     }
     .hamburger{
         display:block;
         position: absolute;
         cursor: pointer;
-        right: 5%;
+        right: 10px;
         top: 50%;
         transform: translate(-5%, -50%);
         z-index: 2;
@@ -152,6 +150,11 @@
     }
     li.fade{
         opacity: 1;
+    }
+}
+@media screen and (max-width: 500px){
+    .name a img {
+        display: none;
     }
 }
 /*Animating Hamburger Icon on Click*/
